@@ -1,0 +1,17 @@
+{
+  "name": "jira-oauth-example",
+  "version": "1.0.0",
+  "description": "This example simulates a nodejs client retrieving a JIRA issue via Oauth.  You connect your browser to the node server (running on port 8080 by default). Go to /session/connect, you will be redirected to JDOG where you do the OAuth dance, JDOG redirects you to /session/callback where the REST representation of JRADEV-8110 is then retrieved from JDOG (using the new freshly minted OAuth access token).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.16.1",
+    "oauth": "github:sladey/node-oauth"
+  }
+}
